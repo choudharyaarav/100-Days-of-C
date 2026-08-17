@@ -1,6 +1,5 @@
 cmake-build-debug/
 .idea/
-Day-*/Q?
-Day-*/Q??
-Day-*/Q???
+Day-*/Q*
+!Day-*/Q*.c
 
