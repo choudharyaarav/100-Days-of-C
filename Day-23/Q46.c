@@ -1,3 +1,31 @@
-//
-// Created by Aarav Choudhary on 04/09/26.
-//
+// Created by Aarav Choudhary on 01/09/26.
+/*Q46: Write a program to print the following pattern:
+*****
+*****
+*****
+*****
+*****
+
+Sample Test Cases:
+Input 1:
+
+Output 1:
+*****
+*****
+*****
+*****
+*****
+
+*/
+#include <stdio.h>
+
+int main() {
+    for (int i = 1; i <= 5; i++) {
+        for (int j = 1; j <= 5; j++) {
+            printf("*");
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
