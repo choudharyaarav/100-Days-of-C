@@ -1,3 +1,33 @@
-//
-// Created by Aarav Choudhary on 04/09/26.
-//
+// Created by Aarav Choudhary on 28/08/26.
+//Q38: Write a program to find the sum of digits of a number.
+
+/*
+Sample Test Cases:
+Input 1:
+123
+Output 1:
+6
+
+Input 2:
+999
+Output 2:
+27
+
+*/
+#include <stdio.h>
+
+int main() {
+    int n, sum = 0, digit;
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    while (n != 0) {
+        digit = n % 10;
+        sum += digit;
+        n /= 10;
+    }
+
+    printf("%d", sum);
+
+    return 0;
+}
