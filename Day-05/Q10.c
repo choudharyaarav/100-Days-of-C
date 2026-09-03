@@ -1,4 +1,4 @@
-// Created by Aarav Choudhary on 14/08/26.
+ // Created by Aarav Choudhary on 14/08/26.
 //Q10: Write a program to input time in seconds and convert it to hours:minutes:seconds format.
 
 /*
