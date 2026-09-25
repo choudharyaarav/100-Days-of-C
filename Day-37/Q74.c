@@ -1,3 +1,35 @@
-//
-// Created by Aarav Choudhary on 26/09/26.
-//
+// Created by Aarav Choudhary on 15/09/26.
+/* Q74: Find the transpose of a matrix.
+
+Sample Test Cases:
+Input 1:
+2 3
+1 2 3
+4 5 6
+Output 1:
+1 4
+2 5
+3 6
+*/
+#include <stdio.h>
+
+int main() {
+    int r, c, i, j, mat[20][20];
+
+    printf("Enter rows and columns: ");
+    scanf("%d %d", &r, &c);
+
+    printf("Enter %d elements: ", r * c);
+    for (i = 0; i < r; i++)
+        for (j = 0; j < c; j++)
+            scanf("%d", &mat[i][j]);
+
+    printf("Transpose:\n");
+    for (j = 0; j < c; j++) {
+        for (i = 0; i < r; i++)
+            printf("%d ", mat[i][j]);
+        printf("\n");
+    }
+
+    return 0;
+}
