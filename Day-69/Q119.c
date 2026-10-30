@@ -1,3 +1,46 @@
-//
-// Created by Aarav Choudhary on 10/21/26.
-//
+// Created by Aarav Choudhary on 17/10/26.
+/* Q119: Write a program to take an integer array as input. Only one element will be repeated. Print the repeated element. Try to find the result in one single iteration.
+
+Sample Test Cases:
+Input 1:
+nums1 = [1,3,3,4]
+Output 1:
+3
+
+Input 2:
+nums1 = [1,2,2]
+Output 2:
+2
+
+Input 3:
+nums1 = [0,4,1,1,5]
+Output 3:
+1
+*/
+#include <stdio.h>
+
+int main() {
+    int nums[100];
+    int seen[1000] = {0};
+    int n, i, ans = -1;
+
+    printf("Enter size of array: ");
+    scanf("%d", &n);
+
+    printf("Enter array elements: ");
+    for (i = 0; i < n; i++)
+        scanf("%d", &nums[i]);
+
+    // single iteration: mark each number as seen
+    for (i = 0; i < n; i++) {
+        if (seen[nums[i]] == 1) {
+            ans = nums[i];
+            break;
+        }
+        seen[nums[i]] = 1;
+    }
+
+    printf("%d", ans);
+
+    return 0;
+}
